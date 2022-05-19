@@ -53,6 +53,7 @@ export function vitePluginHoistedScripts(
 
 					const vid = viteID(new URL('.' + pathname, astroConfig.root));
 					const pageInfo = getPageDataByViteID(internals, vid);
+
 					if (pageInfo) {
 						pageInfo.hoistedScript = id;
 					}
